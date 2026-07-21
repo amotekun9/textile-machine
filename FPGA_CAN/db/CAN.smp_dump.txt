@@ -1,0 +1,25 @@
+
+State Machine - |fpga_top|can_top:u_can_top|can_level_packet:u_can_level_packet|stat
+Name stat.RX_EOF stat.RX_ACK stat.RX_CRC stat.RX_DATA stat.RX_CTRL stat.RX_RESV1_BIT stat.RX_ID_EXTEND stat.RX_IDE_BIT stat.TX_EOF stat.TX_ACK stat.TX_ACK_DEL stat.TX_PAYLOAD stat.TRX_ID_BASE stat.TX_ID_MSB stat.IDLE stat.INIT 
+stat.INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+stat.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+stat.TX_ID_MSB 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+stat.TRX_ID_BASE 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+stat.TX_PAYLOAD 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+stat.TX_ACK_DEL 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+stat.TX_ACK 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+stat.TX_EOF 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+stat.RX_IDE_BIT 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+stat.RX_ID_EXTEND 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+stat.RX_RESV1_BIT 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+stat.RX_CTRL 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+stat.RX_DATA 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+stat.RX_CRC 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stat.RX_ACK 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+stat.RX_EOF 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |fpga_top|can_top:u_can_top|can_level_packet:u_can_level_packet|can_level_bit:u_can_level_bit|stat
+Name stat.STAT_PTS stat.STAT_PBS2 stat.STAT_PBS1 
+stat.STAT_PTS 0 0 0 
+stat.STAT_PBS1 1 0 1 
+stat.STAT_PBS2 1 1 0 
