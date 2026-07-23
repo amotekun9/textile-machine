@@ -1,0 +1,16 @@
+# ---- Keil MDK 编译输出文件 ----
+
+*.lst
+*.map
+*.build_log.htm
+*.ini
+/STM32_CAN/OBJ/
+
+
+# ---- STM32CubeIDE / GCC 编译输出文件 ----
+
+
+# ---- VS Code / 个人编辑器配置 ----
+.vscode/
+.idea/
+*.bak
