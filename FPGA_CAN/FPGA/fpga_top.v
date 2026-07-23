@@ -49,7 +49,7 @@ always @ (posedge clk or negedge rstn)
     if(~rstn) begin
         can_tx_cnt <= 0;
         can_tx_valid <= 1'b0;
-        can_tx_data <= 0;
+        can_tx_data <= 64'hAA_00;
     end else begin
         if(can_tx_cnt<50000000-1) begin
             can_tx_cnt <= can_tx_cnt + 1;
