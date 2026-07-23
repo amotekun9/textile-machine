@@ -59,7 +59,6 @@ always @ (posedge clk or negedge rstn)
             can_tx_valid <= 1'b1;
             can_tx_data <= can_tx_data + 64'hAA+64'hAA_00+64'hAA_00_00+64'hAA_00_00_00+64'hAA_00_00_00_00+64'hAA_00_00_00_00_00+7'b1111111;
             can_tx_data <= can_tx_data + 64'hAA+64'hAA_00+64'hAA_00_00+64'hAA_00_00_00+64'hAA_00_00_00_00+64'hAA_00_00_00_00_00+11'b11;
-            can_tx_data <= can_tx_data + 64'hAA+64'hAA_00+64'hAA_00_00+64'hAA_00_00_00+64'hAA_00_00_00_00+64'hAA_00_00_00_00_00+8'b11111111;
         end
     end
 
