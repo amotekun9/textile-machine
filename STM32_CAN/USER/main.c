@@ -31,7 +31,7 @@ CanTxMsg TxMsg_Trigger = {
 	.IDE   = CAN_Id_Standard,
 	.RTR   = CAN_RTR_DATA,
 	.DLC	 = 4,
-	.Data  = {111,166,222,255}
+	.Data  = {111,166,222,254}
 };
 
 CanTxMsg TxMsg_Ruqestger = {
@@ -46,13 +46,13 @@ CanTxMsg TxMsg_Ruqestger = {
 int main(void)
 {	 
 
-	delay_init();	    	 //延时函数初始化	  
-	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置中断优先级分组为组2：2位抢占优先级，2位响应优先级
-	uart_init(115200);	 	//串口初始化为115200
-	LED_Init();		  		//初始化与LED连接的硬件接口
-	LCD_Init();			   	//初始化LCD	
-	KEY_Init();				//按键初始化		 	
-  MyCAN_init();			//CAN初始化
+	delay_init();	    	 //锟斤拷时锟斤拷锟斤拷锟斤拷始锟斤拷	  
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//锟斤拷锟斤拷锟叫讹拷锟斤拷锟饺硷拷锟斤拷锟斤拷为锟斤拷2锟斤拷2位锟斤拷占锟斤拷锟饺硷拷锟斤拷2位锟斤拷应锟斤拷锟饺硷拷
+	uart_init(115200);	 	//锟斤拷锟节筹拷始锟斤拷为115200
+	LED_Init();		  		//锟斤拷始锟斤拷锟斤拷LED锟斤拷锟接碉拷硬锟斤拷锟接匡拷
+	LCD_Init();			   	//锟斤拷始锟斤拷LCD	
+	KEY_Init();				//锟斤拷锟斤拷锟斤拷始锟斤拷		 	
+  MyCAN_init();			//CAN锟斤拷始锟斤拷
 //	Timer_Init(); 
 	
 	LCD_ShowString(60,60,200,24,24,"Tx:");	
@@ -73,7 +73,7 @@ int main(void)
 	
  	while(1)
 	{
-		/*		定时发送		 */
+		/*		锟斤拷时锟斤拷锟斤拷		 */
 //		if (TimingFlag == 1)
 //		{
 //				TimingFlag = 0;
@@ -89,7 +89,7 @@ int main(void)
 //				LCD_ShowNum(300,90,TxMsg_Timing.Data[3],3,24);
 //		}
 		
-		/*		触发发送		*/
+		/*		锟斤拷锟斤拷锟斤拷锟斤拷		*/
 //		KeyValue = KEY_Scan(0);
 //		if (KeyValue == 1)
 //		{
@@ -115,7 +115,7 @@ int main(void)
 		{
 				MyCAN_Receive(&RxMsg);
 			
-			//显示数据长度
+			//锟斤拷示锟斤拷锟捷筹拷锟斤拷
 			LCD_ShowHexNum(200,360,RxMsg.DLC,3,24);
 			
 			if (RxMsg.IDE == CAN_Id_Standard)
