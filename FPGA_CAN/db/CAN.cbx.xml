@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="CAN">
-		<CBX_INST_ENTRY INSTANCE_NAME="|fpga_top|can_top:u_can_top|altsyncram:buffer_rtl_0" CBX_FILE_NAME="altsyncram_i5h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|fpga_top|uart_tx:u_uart_tx|altsyncram:buffer_rtl_0" CBX_FILE_NAME="altsyncram_i2h1.tdf"/>
-	</PROJECT>
-</LOG_ROOT>
