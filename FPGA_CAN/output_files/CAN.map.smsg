@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at uart_tx.v(150): object "BYTE_T_EN" differs only in case from object "byte_t_en" in the same scope
+Info (10281): Verilog HDL Declaration information at can_level_packet.v(36): object "rx_data" differs only in case from object "RX_DATA" in the same scope
+Info (10281): Verilog HDL Declaration information at can_level_packet.v(96): object "rx_crc" differs only in case from object "RX_CRC" in the same scope
+Info (10281): Verilog HDL Declaration information at can_level_packet.v(38): object "rx_ack" differs only in case from object "RX_ACK" in the same scope
