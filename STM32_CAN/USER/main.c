@@ -40,7 +40,7 @@ CanTxMsg TxMsg_Ruqestger = {
 	.IDE   = CAN_Id_Standard,
 	.RTR   = CAN_RTR_DATA,
 	.DLC	 = 4,
-	.Data  = {154,214,55,124}
+	.Data  = {152,214,55,124}
 };
 
 int main(void)
