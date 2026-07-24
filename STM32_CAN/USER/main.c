@@ -31,7 +31,7 @@ CanTxMsg TxMsg_Trigger = {
 	.IDE   = CAN_Id_Standard,
 	.RTR   = CAN_RTR_DATA,
 	.DLC	 = 4,
-	.Data  = {111,166,222,255}
+	.Data  = {111,166,222,254}
 };
 
 CanTxMsg TxMsg_Ruqestger = {
@@ -52,7 +52,7 @@ int main(void)
 	LED_Init();		  		//��ʼ����LED���ӵ�Ӳ���ӿ�
 	LCD_Init();			   	//��ʼ��LCD	
 	KEY_Init();				//������ʼ��		 	
-  MyCAN_init();			//CAN��ʼ��
+  MyCAN_init();			//哈哈哈，你好哈哈哈哈�?������������
 //	Timer_Init(); 
 	
 	LCD_ShowString(60,60,200,24,24,"Tx:");	
