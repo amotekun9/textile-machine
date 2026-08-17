@@ -1,0 +1,36 @@
+# MDK-ARM 编译过程文件 
+*.txt 
+*.bak 
+*.dep 
+*.qtd 
+*.htm 
+*.build_log.htm 
+*.map 
+*.lst 
+*.crf 
+*.d 
+*.o 
+*.axf 
+*.hex 
+*.bin 
+*.lnp 
+*.sct 
+*.sfr 
+
+# Keil GUI 局部配置文件 
+MDK-ARM/*.uvgui.* 
+MDK-ARM/*.uvguix.* 
+ 
+# 编译输出目录 
+MDK-ARM/Objects/ 
+MDK-ARM/Listings/ 
+ 
+# CubeMX 临时文件 
+.mxproject 
+MDK-ARM/RTE/ 
+ 
+# 系统与编辑器目录 
+.DS_Store 
+Thumbs.db 
+.vscode/ 
+.idea/ 
