@@ -1,25 +1,25 @@
 # MDK-ARM 编译过程文件 
-*.txt 
-*.bak 
-*.dep 
-*.qtd 
-*.htm 
-*.build_log.htm 
-*.map 
-*.lst 
-*.crf 
-*.d 
-*.o 
-*.axf 
-*.hex 
-*.bin 
-*.lnp 
-*.sct 
-*.sfr 
-
+MDK-ARM/**/*.txt 
+MDK-ARM/**/*.bak 
+MDK-ARM/**/*.dep 
+MDK-ARM/**/*.qtd 
+MDK-ARM/**/*.htm 
+MDK-ARM/**/*.build_log.htm 
+MDK-ARM/**/*.map 
+MDK-ARM/**/*.lst 
+MDK-ARM/**/*.crf 
+MDK-ARM/**/*.d 
+MDK-ARM/**/*.o 
+MDK-ARM/**/*.axf 
+MDK-ARM/**/*.hex 
+MDK-ARM/**/*.bin 
+MDK-ARM/**/*.lnp 
+MDK-ARM/**/*.sct 
+MDK-ARM/**/*.sfr 
+ 
 # Keil GUI 局部配置文件 
-MDK-ARM/*.uvgui.* 
-MDK-ARM/*.uvguix.* 
+MDK-ARM/**/*.uvgui.* 
+MDK-ARM/**/*.uvguix.* 
  
 # 编译输出目录 
 MDK-ARM/Objects/ 
